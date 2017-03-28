@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+     <title>Register for Artroom</title>
+    <link rel="stylesheet" href="stylesheet.css">    
+    <meta charset="utf-8">
+    <script type="text/javascript" src="myJS.js"></script>
+</head>    
+    
+<body>
+
+    <h2 style="text-align:center">Registrieren</h2>
+
+    
+          <div class="container" style="border:1px solid #ccc">
+                <label><b>Benutzername</b></label>
+                <input type="text" placeholder="Gib hier deinen Benutzernamen ein" id="user" required>
+
+                <label><b>Passwort</b></label>
+                <input type="password" placeholder="Gib hier dein Passwort ein" id="psw" required>
+
+                <label><b>Beschreibung (Optional)</b></label><br>
+                <textarea id="beschreibung" maxlength="250" required></textarea><br>
+                
+                <label><b>Bilddatei (Optional)</b></label>
+                <input type="text" placeholder="Gib hier jene Bilddatei an, welche später als Profilbild verwendet wird" id="bild" required>
+              
+                <div class="clearfix">
+                      <button type="submit" class="signupbtn" onclick="register()">Registrieren</button>
+                </div>
+              
+                
+          </div>
+
+</body>
+</html>
