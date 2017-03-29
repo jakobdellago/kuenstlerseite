@@ -7,7 +7,6 @@
 
 try{
     $PDO = new PDO(DATABASE, USERNAME, PASSWORD, $options); 
-    echo("Successfully connected to database");
 }catch(PDOException $e){
     echo("failed to connect to database");
 }

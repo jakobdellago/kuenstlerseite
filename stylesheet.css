@@ -84,3 +84,9 @@ button {
     height: 100px;
     resize: none;
 }
+
+/*--------------------------------------------------*/
+
+#imgDiv{
+    justify-content: center;
+}

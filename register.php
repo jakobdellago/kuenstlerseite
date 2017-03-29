@@ -5,10 +5,6 @@
     $username = $_POST['username'];
     $beschreibung = $_POST['beschreibung'];
     $bilddatei = $_POST['bilddatei'];
-
-    echo($username);
-    echo($bilddatei);
-    echo($beschreibung);
     
     $befehl = "INSERT INTO profil(username, p_beschreibung, p_bilddatei) VALUES (?, ?, ?)";
     
@@ -19,3 +15,4 @@
     $statement->execute();
 
 ?>
+
