@@ -90,3 +90,10 @@ button {
 #imgDiv{
     justify-content: center;
 }
+
+#ueberUns{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+    text-align: center;
+}

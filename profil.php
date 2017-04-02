@@ -24,7 +24,7 @@
 <head>
     
     <title><?php echo($username."s Profil")?></title>
-    <link rel="stylesheet" href="stylesheet.css" id="profilIMG">    
+    <link rel="stylesheet" href="stylesheet.css">    
     <meta charset="utf-8">
 </head>    
     
@@ -35,7 +35,7 @@
     <center><img src="<?php echo($bilddatei) ?>"></center>
     
     <center><p>Beschreibung:<br><?php echo($beschreibung) ?></p></center>
-
+    
     <a href="index.html">Auf die Hauptseite..</a>
     
 </body>
