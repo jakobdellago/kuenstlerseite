@@ -41,10 +41,10 @@
     
     <center>
         
-        <img src="<?php echo($bilddatei) ?>">
+        <img src="<?php echo("Kunstwerke/".$bilddatei) ?>" alt="Sorry, aber die Bilddatei ist auf dem Server nicht zu finden (Falsch geschrieben? Falscher Ordner?)" width="25%" height="25%">
         <p>Beschreibung:<br><?php echo($beschreibung) ?></p>
         <a href="<?php echo("profil.php?username=".$username) ?>">Künstler</a><br>
-        <a href="index.html">Auf die Hauptseite..</a>
+        <a href="index.php">Auf die Hauptseite..</a>
     
     </center>
     

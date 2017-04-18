@@ -2,16 +2,19 @@
 
     include("PDO_Connection.php");
 
-    $titel = $_POST['username'];
+    $titel = $_POST['titel'];
     $beschreibung = $_POST['beschreibung'];
     $bilddatei = $_POST['bilddatei'];
-    
-    $befehl = "INSERT INTO profil(username, p_beschreibung, p_bilddatei) VALUES (?, ?, ?)";
+    $erstellerID = $_POST['erstellerID'];
+
+    $befehl = "INSERT INTO werk(titel, w_bilddatei, w_beschreibung, erstellerID) 
+    VALUES (?, ?, ?, ?)";
     
     $statement = $PDO->prepare($befehl);
-    $statement->bindParam(1, $username, PDO::PARAM_STR);
-    $statement->bindParam(2, $beschreibung, PDO::PARAM_STR);
-    $statement->bindParam(3, $bilddatei, PDO::PARAM_STR);
+    $statement->bindParam(1, $titel, PDO::PARAM_STR);
+    $statement->bindParam(2, $bilddatei, PDO::PARAM_STR);
+    $statement->bindParam(3, $beschreibung, PDO::PARAM_STR);
+    $statement->bindParam(4, $erstellerID, PDO::PARAM_STR);
     $statement->execute();
 
 ?>
